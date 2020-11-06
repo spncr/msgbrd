@@ -1,0 +1,25 @@
+{
+  "name": "msgbrd",
+  "version": "0.0.1",
+  "description": "message board app from odin project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js",
+    "serverstart": "DEBUG=msgbrd:* npm run devstart",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "spncr",
+  "license": "ISC",
+  "engines": {
+    "node": "^15.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.0"
+  },
+  "devDependencis": {
+    "nodemon": "^2.0.6"
+  }
+}
