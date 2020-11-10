@@ -13,7 +13,8 @@ app.set('view engine', 'pug')
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
-app.set(express.static(path.join(__dirname, 'public')))
+
+app.use(express.static('public'))
 
 //routes
 app.use('/', indexRouter)
