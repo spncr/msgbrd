@@ -108,5 +108,6 @@ textarea {
   background-color: var(--deep);
   color: var(--warm);
   font: 1.8rem 'Asap', sans-serif;
-  padding: .5rem;
+  padding: .4rem .6rem;
+  margin: .6rem 0;
 }
