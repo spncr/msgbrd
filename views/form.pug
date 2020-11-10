@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1= title
   form(method='POST' action='/new')
-    textarea(name='text' placeholder='your public message')
+    textarea(
+      name='text'
+      placeholder='your public message'
+    )
     br
     input(
       type='text'
@@ -14,4 +16,4 @@ block content
     input(
       type='submit'
       value='submit'
-    ) 
+    )

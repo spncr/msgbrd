@@ -3,16 +3,14 @@ let router = express.Router()
 
 router.get('/', (req, res, next) => {
   res.render('form', {
-    title: 'Posting'
+    title: 'MSG BRD',
+    action: {
+      url: '/',
+      label: "back"
+    }
   })
 })
 
-router.post('/', (req, res, next) => {
-  messages.push({
-    text: req.body.text,
-    user: req.body.user,
-    added: new Date()
-  })
-})
+
 
 module.exports = router

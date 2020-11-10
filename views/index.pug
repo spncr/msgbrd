@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to the #{title}
-  ul
+
+  ul.messages
     each msg in messages
-      li 
-        p "#{msg.text} " - #{msg.user} @ #{msg.added}
+      li
+        .message #{msg.text}
+        .message-info 
+          span.byline -- #{msg.user} 
+          span.timestamp | #{msg.added.toDateString()}
