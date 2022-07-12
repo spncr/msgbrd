@@ -12,7 +12,7 @@
   "author": "spncr",
   "license": "ISC",
   "engines": {
-    "node": "^15.1.0"
+    "node": "^18.x"
   },
   "dependencies": {
     "express": "^4.17.1",
